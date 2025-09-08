@@ -25,7 +25,7 @@ RUN uv sync --locked --no-dev
 ENV PATH="/app/.venv/bin:$PATH"
 
 # Expose the service port
-EXPOSE 8000
+EXPOSE 8088
 
 # Start the MCP server
 ENTRYPOINT ["uv", "run", "mcp_server.py"]
